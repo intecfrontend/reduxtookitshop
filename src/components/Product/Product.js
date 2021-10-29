@@ -1,4 +1,6 @@
-import "../..//App.css";
+import "../../App.css";
+import QuantityButton from "./QuantityButton";
+
 const Product = ({ product }) => {
   return (
     <div className="product">
@@ -13,11 +15,11 @@ const Product = ({ product }) => {
         <h2 className="title">{product.name}</h2>
         <p>id{product.id}</p>
         <p>€{product.price}</p>
-        <div className="quantityButton">
-          <button>&#8722;</button>
-          <span>10</span>
-          <button>&#43;</button>
-        </div>
+
+<QuantityButton/>
+
+
+
         <button className="addToCartButton">ADD TO CART</button>
         <a href="/">View full details &#859;</a>
         <p>{product.category}</p>
