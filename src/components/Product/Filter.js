@@ -1,5 +1,5 @@
-
 import React from "react";
+
 
 const Filter = ({isActive, category}) => {
   return (
@@ -7,6 +7,8 @@ const Filter = ({isActive, category}) => {
       className={isActive ? "filterButton filterButtonActive" : "filterButton"}
     >
       {category}
+
+
     </span>
   );
 };

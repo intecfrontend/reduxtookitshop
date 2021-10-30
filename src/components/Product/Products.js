@@ -12,7 +12,7 @@ const products = [
     price: 45,
     img: "lemon",
     name: "Lemon - 5kg",
-    category: "vegetables"
+    category: "fruit"
   },
   {
     id: 3,
@@ -25,56 +25,55 @@ const products = [
     id: 4,
     price: 25,
     img: "kiwi",
-    name: "Garlic - 1kg",
-    category: "vegetables"
+    name: "Kiwi - 1kg",
+    category: "fruit"
   },
   {
     id: 5,
     price: 25,
     img: "avocado",
-    name: "Garlic - 1kg",
-    category: "vegetables"
+    name: "Avocado - 1kg",
+    category: "fruit"
   },
   {
     id: 6,
     price: 25,
     img: "grapes",
-    name: "Garlic - 1kg",
-    category: "vegetables"
+    name: "Grapes - 1kg",
+    category: "fruit"
   },
   {
     id: 7,
     price: 25,
     img: "tomatoe",
-    name: "Garlic - 1kg",
+    name: "Tomatoes - 1kg",
     category: "vegetables"
   },
   {
     id: 8,
     price: 25,
     img: "strawberry",
-    name: "Garlic - 1kg",
-    category: "vegetables"
+    name: "Strawberries - 1kg",
+    category: "fruit"
   },
   {
     id: 9,
     price: 25,
     img: "orange",
-    name: "Garlic - 1kg",
-    category: "vegetables"
+    name: "Orange - 1kg",
+    category: "fruit"
   },
   {
     id: 10,
     price: 25,
     img: "paprika",
-    name: "Garlic - 1kg",
+    name: "Paprika - 1kg",
     category: "vegetables"
   }
 ];
 const Products = () => {
   return (
     <div>
-      Products
       {products.map(product => (
         <Product product={product} />
       ))}

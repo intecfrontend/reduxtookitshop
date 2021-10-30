@@ -13,6 +13,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.borderedContainer {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 25%);
+}
 .product {
   float: left;
   margin: 10px;
@@ -20,6 +26,7 @@ body {
   width: 350px;
   height: auto;
   min-height: 450px;
+  max-height: 550px;
   border-radius: 5px;
   box-shadow: 0 2px 10px rgb(0 0 0 / 25%);
   display: flex;
@@ -32,7 +39,9 @@ img {
   margin: 10px;
   height: 50%;
   width: 50%;
-  object-fit: cover;
+  object-fit: contain;
+  height: 150px;
+  min-width: 200px;
 }
 .descContainer {
   padding: 10px;
@@ -90,6 +99,7 @@ img {
   padding: 5px;
   background-color: #56cfe1;
 }
+
 .filterButton:hover {
   background-color: #3da0af;
 }
@@ -98,6 +108,35 @@ img {
 }
 .cartContainer {
   width: 250px;
+  height: auto;
   float: right;
-  
+}
+.cartTotalPriceContainer {
+  text-align: center;
+  padding: 10px;
+}
+.cartTotalPrice {
+  font-size: 30px;
+  font-weight: 700;
+  color: #7cf53f;
+}
+
+.cartItemRemoveButtonContainer {
+  float: right;
+  margin-top: 20;
+  margin-right: 5px;
+}
+
+.cartItem {
+  background: #e3f5f9;
+  display: block;
+  height: 75px;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cartContainer .title {
+  text-align: center;
+  margin-bottom: 10px;
 }

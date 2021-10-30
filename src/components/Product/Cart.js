@@ -1,4 +1,10 @@
 import React from "react";
+import CartItem from "./CartItem.js";
+
+const cartItems = [
+  { id: 1, name: "Apple", quantity: 10, price: 250 },
+  { id: 2, name: "Orange", quantity: 5, price: 150 }
+];
 
 const Cart = () => {
   return (
@@ -8,6 +14,9 @@ const Cart = () => {
         <p>Total:</p>
         <span className="cartTotalPrice">$250</span>
       </div>
+      {cartItems.map(cartItem => (
+        <CartItem cartItem={cartItem} />
+      ))}
     </div>
   );
 };
