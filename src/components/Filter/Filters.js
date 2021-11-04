@@ -6,7 +6,7 @@ const Filters = () => {
     <div className="borderedContainer">
       <b>Choose category:</b>
       {["fruit", "vegetables", "all"].map(category => (
-        <Filter category={category} isActive={false} />
+        <Filter category={category}  />
       ))}
     </div>
   );

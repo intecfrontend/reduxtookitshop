@@ -8,8 +8,7 @@ const Products = () => {
   return (
     <div className="productsContainer">
       {productsProvider.filter(product => {if (selectedCategory === 'all')return true;
-      return selectedCategory === product.category})
-      .map(product => (
+      return selectedCategory === product.category}).map(product => (
         <Product product={product} />
       ))}
     </div>

@@ -7,6 +7,7 @@ import { addItemToCart } from "../../features/cart/cartSlice";
 const Product = ({ product }) => {
   const [quantity, setQuantity] = useState(1);
   const dispatch = useDispatch();
+  // console.log("pr" + JSON. stringify(product));
   return (
     <div className="product productContainer">
       <div>
@@ -27,7 +28,8 @@ const Product = ({ product }) => {
 
         <button
           onClick={() => {
-            dispatch(addItemToCart(product, quantity));
+            //HERE WAS THE ERROR!!!!
+            dispatch(addItemToCart({ product, quantity }));
           }}
           className="addToCartButton"
         >
